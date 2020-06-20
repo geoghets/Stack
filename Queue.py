@@ -19,26 +19,7 @@ class Queue:
         self.list_.insert(0,i)
 
 
-s = Queue()
-s.enqueue("a")
-s.enqueue("b")
-s.enqueue("c")
-
-assert s.dequeue() == "c"
-assert s.dequeue() == "b"
-s.enqueue("B")
-s.enqueue("C")
-assert s.dequeue() == "C" # I switched this line
-assert s.dequeue() == "B" # with this line
-assert s.dequeue() == "a"
-assert s.dequeue() == None
-
-
-
-
-
-
-
+# original driver code
 # assert( s.pop(), "c")
 # assert( s.pop(), "b")
 # s.push("B")
